@@ -10,12 +10,12 @@ import com.arpan.exception.InvalidInputException;
 
 /*
  * 	Given two integer arrays where second array is duplicate of first array with just 1 element missing. 
-    Find the element.
- 	Example:
- 	Input:
- 	Array1 - 9 7 8 5 4 6 7 2 3 1
- 	Array2 - 2 4 3 9 1 8 5 6
- 	Output: 7
+ Find the element.
+ Example:
+ Input:
+ Array1 - 9 7 8 5 4 6 7 2 3 1
+ Array2 - 2 4 3 9 1 8 5 6
+ Output: 7
  */
 public class FindMissingNumberFromSecondArray {
 
@@ -57,8 +57,9 @@ public class FindMissingNumberFromSecondArray {
 		int[] array1 = { 9, 7, 8, 5, 4, 6, 2, 3, 1 };
 		int[] array2 = { 2, 3, 4, 9, 1, 8, 5, 6 };
 		try {
-			System.out.print("Missing number by Set >>" );
-			System.out.println(getMissingNumberFromTwoArraysBySet(array1,array2));
+			System.out.print("Missing number by Set >>");
+			System.out.println(getMissingNumberFromTwoArraysBySet(array1,
+					array2));
 		} catch (InvalidInputException e) {
 			e.printStackTrace();
 		}
@@ -92,14 +93,15 @@ public class FindMissingNumberFromSecondArray {
 		}
 		return result;
 	}
-	
+
 	@Test
 	public void TestGetMissingNumberFromTwoArraysByXOR() {
 		int[] array1 = { 9, 7, 8, 5, 4, 6, 2, 3, 1 };
 		int[] array2 = { 2, 3, 4, 9, 1, 8, 5, 6 };
 		try {
-			System.out.print("Missing number by XOR >>" );
-			System.out.println(getMissingNumberFromTwoArraysByXOR(array1,array2));
+			System.out.print("Missing number by XOR >>");
+			System.out.println(getMissingNumberFromTwoArraysByXOR(array1,
+					array2));
 		} catch (InvalidInputException e) {
 			e.printStackTrace();
 		}
